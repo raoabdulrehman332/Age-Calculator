@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Age Calculator</title>
+</head>
+<style>
+    body{
+        background-color: burlywood;
+    }
+    h2{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 55px;
+        text-transform: capitalize;
+        color: rgb(0, 149, 255);
+    }
+    h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 32px;
+        line-height: 20px;
+        text-align: justify !important;
+    }
+    #notFound{
+        color: red;
+    }
+</style>
+<body>
+    <h2>The Age Calculator</h2>
+
+
+
+
+
+    <script>
+        var birthYear = prompt("Enter Your Birth Year :");
+        var a = birthYear;
+        var dayInYear = 365;
+        var monthInYear = 12;
+        var weekInMonth = 4.34524;
+        var hourInDay = 24
+        var minInHour = 60
+        var currentYear = 2024;
+        var year1 = birthYear ;
+        var age = currentYear - birthYear;
+        var days = age * dayInYear;
+        var months = age * monthInYear;
+        var weeks = weekInMonth * months;
+        var hours = days * hourInDay;
+        var mints = hours * minInHour;
+       
+
+            if(a >= currentYear){
+                document.write(`<h1 class="" id="notFound">"${birthYear}" This Year is not Found.`);
+            }
+            else{
+        document.write(`<h1 class="">Birth Year : ${a}`);
+        document.write(`<h1 class="">Current Year : ${currentYear}`);
+        document.write(`<h1 class="">Your Age is : ${age}`);
+        document.write(`<h1 class="">Moths : ${months}`);
+        document.write(`<h1 class="">Days : ${days}`);
+        document.write(`<h1 class="">Weeks : ${weeks}`);
+        document.write(`<h1 class="">Hours : ${hours}`);
+        document.write(`<h1 class="">Minutes : ${mints}`);
+            }
+    </script>
+</body>
+</html>
